@@ -14,24 +14,21 @@ function App() {
 
   useEffect(() => {
     checkIfWalletIsConnected();
-  });
+  }, []);
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="mainContainer">
+      <div className="dataContainer">
+        <div className="header">👋 Hey there!</div>
+        <div className="bio">
+          I am surla and I am learning how to develop web3 stuff! Connect your
+          Ethereum wallet and wave at me!
+        </div>
+
+        <button className="waveButton" onClick={null}>
+          Wave at Me
+        </button>
+      </div>
     </div>
   );
 }
