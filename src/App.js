@@ -1,7 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from "react";
+import "./App.css";
 
 function App() {
+  const checkIfWalletIsConnected = () => {
+    const { ethereum } = window;
+
+    if (!ethereum) {
+      console.log("Make sure you have metamask!");
+    } else {
+      console.log("We have the etheruem object", ethereum);
+    }
+  };
+
+  useEffect(() => {
+    checkIfWalletIsConnected();
+  });
+
   return (
     <div className="App">
       <header className="App-header">
