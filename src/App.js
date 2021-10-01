@@ -6,7 +6,7 @@ import "./App.css";
 function App() {
   const [currentAccount, setCurrentAccount] = useState("");
 
-  const contractAddress = "0x5bfadef78cf64dfe6c8734e589c6babcb5c60ce0";
+  const contractAddress = "0xeb8F918F2F5d8a2551f9CaF55E36d75B73435526";
 
   const checkIfWalletIsConnected = async () => {
     try {
